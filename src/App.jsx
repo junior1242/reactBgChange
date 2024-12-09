@@ -8,7 +8,7 @@ function App() {
         className=" flex w-full h-screen duration-200 "
         style={{ backgroundColor: color }}
       >
-        <div className="p-4">
+          <div className="p-4">
           <div className="flex flex-col gap-5  p-4 rounded">
             <button
               className=" bg-red-400 p-4 text-white font-bold rounded-2xl "
@@ -32,6 +32,7 @@ function App() {
             >
               Blue
             </button>
+
             <button
               className="bg-yellow-400 p-4 text-white font-bold rounded-2xl "
               onClick={() => setcolor("yellow")}
@@ -39,16 +40,27 @@ function App() {
             >
               Yellow
             </button>
-
-            {/*            
-              <button
-              onClick={() => setcolor("red")}
-              className="outline-none px-4 py-1 rounded-full text-white shadow-lg"
-              style={{ backgroundColor: "red" }}
+            <button
+              className="bg-yellow-400 p-4 text-white font-bold rounded-2xl border-black"
+              onClick={() => setcolor("Gray")}
+              style={{ backgroundColor: "Gray" }}
             >
-              Red
+              Gray
             </button>
-            */}
+            <button
+              className="bg-yellow-400 p-4 text-white font-bold rounded-2xl border-black"
+              onClick={() => setcolor("Gray")}
+              style={{ backgroundColor: "Green" }}
+            >
+              Green
+            </button>
+            <button
+              className="bg-yellow-400 p-4 text-white font-bold rounded-2xl border-black"
+              onClick={() => setcolor("Black")}
+              style={{ backgroundColor: "Black" }}
+            >
+              Black
+            </button>
           </div>
         </div>
       </div>
